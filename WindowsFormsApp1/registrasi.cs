@@ -21,6 +21,11 @@ namespace WindowsFormsApp1
         {
             string nama, telp, alamat, username, password;
 
+            nama = textBox1.Text;
+            telp = textBox2.Text;
+            alamat = textBox3.Text;
+            username = textBox4.Text;
+            password = textBox5.Text;
 
         }
     }
