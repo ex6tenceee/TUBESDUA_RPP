@@ -22,6 +22,15 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string[] uname = Enum.GetNames(typeof(username));
+            if (password.Contains(textBox2.Text) && uname.Contains(textBox1.Text) && Array.IndexOf(uname, textBox1.Text) == Array.IndexOf(password, textBox2.Text))
+            {
+                label3.Text = "Sukses";
+            }
+            else
+            {
+                label3.Text = "Coba Lagi";
+            }
 
         }
     }
